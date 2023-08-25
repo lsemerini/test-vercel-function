@@ -1,4 +1,5 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const { v4 } = require('uuid');
 
 app.use(express.static('public'))
