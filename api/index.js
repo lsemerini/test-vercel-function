@@ -27,7 +27,7 @@ app.get('/api', (req, res) => {
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
   // res.status(200).end(`Hello! Go to item: <a href="${path}">${path}</a>`);
-  res.send(JSON.parse({ "test": true }))
+  res.send(JSON.stringify({ "test": true }))
   // res.status(200).json({
   //   "message": `Hello! Go to item: <a href="${path}">${path}</a>`
   // });
